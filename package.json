@@ -4,5 +4,8 @@
   },
   "scripts": {
     "serve": "tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+  },
+  "dependencies": {
+    "taos": "^1.0.5"
   }
 }

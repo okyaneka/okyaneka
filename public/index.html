@@ -11,57 +11,195 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,200..1000;1,6..12,75..125,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <style>
+    :root {
+      --theme-color: #52b3d0;
+    }
     body {
       font-family: "Nunito Sans", sans-serif;
+      background: linear-gradient(135deg, #eeeeee80 50%, transparent 0),
+        linear-gradient(-135deg, #eeeeee 50%, transparent 0);
+      background-size: 2em 2em;
     }
   </style>
-  <body class="bg-gray-100">
+  <body class="bg-gray-200 hidden">
     <main class="flex justify-center">
-      <section
-        class="m-4 flex-1 max-w-4xl bg-gray-900 p-4 rounded-2xl shadow-lg"
-      >
-        <div class="grid sm:grid-cols-2 gap-4 text-white">
-          <div class="col-span-2 p-4 rounded-2xl bg-blue-900">
-            <div class="text-4xl font-bold text-right">
-              <div>Hello</div>
-              <div>This is me</div>
-              <div>Oky Desi Aneka</div>
+      <div class="flex-none p-4 w-full max-w-4xl">
+        <section
+          class="group w-full flex max-w-4xl bg-white p-4 rounded-2xl shadow hover:shadow-lg duration-300 shadow-gray-300 border border-solid border-gray-300 mb-4"
+        >
+          <div class="flex items-center cursor-pointer">
+            <div
+              class="mr-2 h-5 w-5 rounded bg-primary-400 group-hover:rotate-45 group-hover:bg-red-500 duration-300 align-middle"
+            ></div>
+            <div class="uppercase text-lg font-semibold">Oky Aneka</div>
+          </div>
+          <div class="ml-auto flex items-center">
+            <a
+              href="https://github.com/okyaneka/"
+              class="group/github"
+              target="_blank"
+            >
+              <div
+                class="rounded-full bg-gray-800 h-6 w-6 group-hover/github:bg-gray-600 duration-300 flex items-center justify-center"
+              >
+                <i class="ri ri-github-fill text-white"></i>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section
+          class="w-full mb-4 max-w-4xl bg-white p-4 rounded-2xl shadow hover:shadow-lg duration-300 shadow-gray-300 border border-solid border-gray-300"
+        >
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div
+              class="col-span-2 p-4 rounded-2xl bg-white border border-solid border-gray-200 hover:shadow transition-all duration-300"
+            >
+              <img
+                class="h-96 w-full object-contain"
+                src="./img/image-1.jpg"
+                alt="Image by storyset on Freepik"
+              />
+            </div>
+
+            <div
+              class="col-span-2 p-4 rounded-2xl text-white bg-primary-600 border border-solid border-primary-500 hover:shadow transition-all duration-300"
+            >
+              <div class="relative ml-8 text-4xl font-extrabold mb-4">
+                <div
+                  class="inline-block absolute -left-8 top-[10px] w-5 h-5 bg-primary-400"
+                ></div>
+                Hello 👋, I'm Oky Aneka, a frontend engineer specializing in
+                <a
+                  class="text-primary-400 hover:underline"
+                  href="https://vuejs.org/"
+                  target="_blank"
+                >
+                  <i class="ri-vuejs-line"></i>
+                  VueJS
+                </a>
+                &amp;
+                <a
+                  class="text-primary-400 hover:underline"
+                  href="https://react.dev/"
+                  target="_blank"
+                >
+                  <i class="ri-reactjs-line"></i>
+                  React
+                </a>
+              </div>
+              <div class="relative ml-8 text-2xl mb-4">
+                Hi there, I'm Oky Aneka, a frontend engineer based in Yogyakarta
+                🇮🇩. I've been working as frontend engineer since 2020.
+              </div>
+              <div class="relative ml-8 text-2xl mb-4">
+                Before I became a frontend engineer, I had tried to studying
+                many things in the world of websites, starting from fullstack,
+                monolith, backend and finally I decided to study frontend
+                engineering more deeply. I think, frontend engineering is an
+                exciting world. Here I feel, I can visualize several lines of
+                text into something that is comfortable to look at.
+              </div>
+            </div>
+
+            <div class="hidden">
+              <div
+                class="col-span-2 p-4 rounded-2xl bg-white textgra border border-solid border-gray-200 hover:shadow transition-all duration-300"
+              >
+                <div
+                  class="relative ml-8 text-4xl font-extrabold mb-4 text-primary-500"
+                >
+                  <div
+                    class="inline-block absolute -left-8 top-[10px] w-5 h-5 bg-primary-400"
+                  ></div>
+                  About
+                </div>
+                <div class="relative ml-8 text-2xl mb-4">
+                  Hi there, I'm Oky Aneka, a frontend engineer based in
+                  Yogyakarta 🇮🇩. I've been working as frontend engineer since
+                  2020.
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-blue-800">
+                <div class="text-3xl font-medium text-right">
+                  <div>About</div>
+                </div>
+              </div>
+              <div class="p-4 rounded-2xl bg-blue-800">
+                <div class="text-3xl font-medium text-right">
+                  <div>Hobbies</div>
+                </div>
+              </div>
+              <div class="p-4 rounded-2xl bg-blue-800">
+                <div class="text-3xl font-medium text-right">
+                  <div>Experiences</div>
+                </div>
+              </div>
+              <div class="p-4 rounded-2xl bg-blue-800">
+                <div class="text-3xl font-medium text-right">
+                  <div>Educations</div>
+                </div>
+              </div>
+              <div class="p-4 rounded-2xl bg-blue-800">
+                <div class="text-3xl font-medium text-right">
+                  <div>Contact</div>
+                </div>
+              </div>
+              <div class="p-4 rounded-2xl bg-blue-800">
+                <div class="text-3xl font-medium text-right">
+                  <div>Social Media</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="p-4 rounded-2xl bg-blue-800">
-            <div class="text-3xl font-medium text-right">
-              <div>About</div>
-            </div>
+        </section>
+        <section
+          class="w-full max-w-4xl bg-white p-4 rounded-2xl shadow hover:shadow-lg duration-300 shadow-gray-300 border border-solid border-gray-300"
+        >
+          <div class="flex justify-center gap-4">
+            <a
+              class="text-xl hover:text-pink-700"
+              href="https://instagram.com/kukuruyuk.kuk"
+              target="_blank"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a
+              class="text-xl hover:text-blue-700"
+              href="https://facebook.com/kulooky"
+              target="_blank"
+            >
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a
+              class="text-xl hover:underline"
+              href="https://mobile.twitter.com/kulooky_"
+              target="_blank"
+            >
+              <i class="ri-twitter-x-line"></i>
+            </a>
           </div>
-          <div class="p-4 rounded-2xl bg-blue-800">
-            <div class="text-3xl font-medium text-right">
-              <div>Hobbies</div>
-            </div>
-          </div>
-          <div class="p-4 rounded-2xl bg-blue-800">
-            <div class="text-3xl font-medium text-right">
-              <div>Experiences</div>
-            </div>
-          </div>
-          <div class="p-4 rounded-2xl bg-blue-800">
-            <div class="text-3xl font-medium text-right">
-              <div>Educations</div>
-            </div>
-          </div>
-          <div class="p-4 rounded-2xl bg-blue-800">
-            <div class="text-3xl font-medium text-right">
-              <div>Contact</div>
-            </div>
-          </div>
-          <div class="p-4 rounded-2xl bg-blue-800">
-            <div class="text-3xl font-medium text-right">
-              <div>Social Media</div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
+
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+    <script>
+      window.onload = () => {
+        setTimeout(() => {
+          document.body.classList.remove("hidden");
+        }, 3e2);
+      };
+    </script>
   </body>
 </html>
